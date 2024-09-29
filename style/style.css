@@ -1,10 +1,14 @@
 html {
   box-sizing: border-box;
+  background-image: url('img/hello-kitty.gif');
+  background-size: cover;
 }
 
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background-image: url('img/hello-kitty.gif');
+  background-size: cover;
 }
 
 body::before {
@@ -28,6 +32,8 @@ body::before {
   visibility: hidden;
   position: relative;
   overflow: hidden;
+  background-image: url('img/hello-kitty.gif');
+  background-size: cover;
 
 }
 
