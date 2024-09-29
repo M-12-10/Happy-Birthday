@@ -64,7 +64,7 @@ html {
 .four .text-box {
   width: 600px;
   margin: 0 auto;
-  border: 3px solid #aaa;
+  border: 3px solid #ffbad2;
   border-radius: 5px;
   padding: 10px;
   position: relative;
@@ -84,7 +84,7 @@ html {
   right: 5px;
   bottom: 5px;
   color: #fff;
-  background-color: rgb(21, 161, 237);
+  background-color: #ffbad2;
   padding: 5px 8px;
   border-radius: 3px;
 }
