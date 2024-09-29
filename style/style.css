@@ -279,7 +279,7 @@ html {
   }
 }
 
-/* Other media queries */
+/* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
     left: 40%;
