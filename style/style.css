@@ -22,10 +22,6 @@ html {
   visibility: hidden;
   position: relative;
   overflow: hidden;
-  background-image: url('img/hello-kitty.gif');
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .container div.six {
