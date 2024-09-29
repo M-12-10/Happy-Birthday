@@ -5,9 +5,9 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
-  background-image: url('https://giphy.com/gifs/hello-kitty-pixel-coffee-92YG8KKSjYhMc');
+  background-image: url('https://giphy.com/embed/92YG8KKSjYhMc');
   background-repeat: repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .container {
