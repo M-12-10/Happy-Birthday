@@ -4,10 +4,10 @@ html {
 
 @keyframes scrollBackground {
   0% {
-    transform: translate3d(0, 0, 0);
+    background-position: 0% 0%;
   }
   100% {
-    transform: translate3d(-1920px, 0, 0); /* The image width */
+    background-position: 100% 100%;
   }
 }
 
