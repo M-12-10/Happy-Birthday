@@ -1,27 +1,12 @@
 html {
-  background-image: url('img/hello-kitty.gif');
-  background-size: cover;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
-  background-image: url('img/hello-kitty.gif');
-  background-size: cover;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url('img/hello-kitty.gif');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 
 .container {
   height: 100vh;
@@ -31,8 +16,6 @@ body::before {
   visibility: hidden;
   position: relative;
   overflow: hidden;
-  background-image: url('img/hello-kitty.gif');
-  background-size: cover;
 
 }
 
