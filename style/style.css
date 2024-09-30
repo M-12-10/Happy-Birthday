@@ -122,8 +122,8 @@ html {
 
 .six img {
   display: inline-block;
-  max-width: 100%;
-  height: auto;
+  max-width: 50%;
+  height: 50%;
 }
 
 .six .hat {
@@ -131,7 +131,6 @@ html {
   width: 100px;
   top: -50px;
   left: 41.5%;
-  margin-top: 20px;
   /* transform: scale(0.1); */
 }
 
