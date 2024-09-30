@@ -206,7 +206,7 @@ const animationTimeline = () => {
         opacity: 1,
         y: -1000
       },
-      0.2
+      2.5
       
     )
     .from(
