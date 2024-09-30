@@ -124,7 +124,7 @@ html {
   display: inline-block;
   max-width: 100%; /* Ensures the image doesn’t exceed its container's width */
   height: auto; /* Maintains aspect ratio */
-  border-radius: 50%; /* Makes the dp circular */
+  border-radius: 80%; /* Makes the dp circular */
   margin: 0 auto;
 }
 
@@ -351,21 +351,21 @@ html {
 @media screen and (min-width: 1024px) {
   /* For larger desktop screens */
   .six img {
-    max-width: 250px; /* Restrict size on larger screens */
+    max-width: 500px; /* Restrict size on larger screens */
   }
 }
 
 @media screen and (max-width: 720px) {
   /* For smaller mobile screens */
   .six img {
-    max-width: 150px; /* Smaller dp for mobile */
+    max-width: 300px; /* Smaller dp for mobile */
   }
 }
 
 @media screen and (max-width: 500px) {
   /* For very small screens */
   .six img {
-    max-width: 120px;
+    max-width: 150px;
   }
 }
 /* Media Queries for responsiveness */
