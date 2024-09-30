@@ -139,6 +139,8 @@ html {
 .baloons img {
   display: inline-block;
   position: absolute;
+  max-width: 15%; /* Balloons will take up a percentage of the screen width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .baloons img:nth-child(even) {
@@ -364,5 +366,26 @@ html {
   /* For very small screens */
   .six .lydia {
     max-width: 120px;
+  }
+}
+/* Media Queries for responsiveness */
+@media screen and (min-width: 1024px) {
+  /* For larger desktop screens */
+  .baloons img {
+    max-width: 10%; /* Smaller balloons on large screens */
+  }
+}
+
+@media screen and (max-width: 720px) {
+  /* For medium-sized screens (e.g. tablets, small laptops) */
+  .baloons img {
+    max-width: 12%; /* Slightly bigger balloons for mid-sized screens */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* For smaller mobile screens */
+  .baloons img {
+    max-width: 18%; /* Bigger balloons on smaller screens for better visibility */
   }
 }
