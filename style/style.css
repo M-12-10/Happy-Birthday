@@ -122,8 +122,10 @@ html {
 
 .six img {
   display: inline-block;
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Ensures the image doesn’t exceed its container's width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Makes the dp circular */
+  margin: 0 auto;
 }
 
 .six .hat {
@@ -342,5 +344,25 @@ html {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* For larger desktop screens */
+  .six .lydia {
+    max-width: 250px; /* Restrict size on larger screens */
+  }
+}
+
+@media screen and (max-width: 720px) {
+  /* For smaller mobile screens */
+  .six .lydia {
+    max-width: 150px; /* Smaller dp for mobile */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* For very small screens */
+  .six .lydia {
+    max-width: 120px;
   }
 }
