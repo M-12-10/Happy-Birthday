@@ -122,8 +122,8 @@ html {
 
 .six img {
   display: inline-block;
-  max-width: 80%;
-  height: 80%;
+  max-width: 100%;
+  height: auto;
 }
 
 .six .hat {
