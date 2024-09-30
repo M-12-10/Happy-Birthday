@@ -379,13 +379,13 @@ html {
 @media screen and (max-width: 720px) {
   /* For medium-sized screens (e.g. tablets, small laptops) */
   .baloons img {
-    max-width: 85%; /* Slightly smaller balloons for mid-sized screens */
+    max-width: 90%; /* Slightly smaller balloons for mid-sized screens */
   }
 }
 
 @media screen and (max-width: 500px) {
   /* For smaller mobile screens */
   .baloons img {
-    max-width: 70%; /* Smaller balloons on smaller screens */
+    max-width: 80%; /* Smaller balloons on smaller screens */
   }
 }
