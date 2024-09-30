@@ -161,7 +161,7 @@ const animationTimeline = () => {
         rotation: 360,
         x: 8
       },
-      "+=0.4"
+      "+=0.1"
     )
     .to(
       ".idea-5",
@@ -222,7 +222,7 @@ const animationTimeline = () => {
     )
     .from(".hat", 0.5, {
       x: -100,
-      y: 330,
+      y: 380,
       rotation: -180,
       opacity: 0
     })
