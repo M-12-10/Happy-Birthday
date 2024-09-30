@@ -273,9 +273,9 @@ const animationTimeline = () => {
         opacity: 0,
         scale: 80,
         repeat: 3,
-        repeatDelay: 1.4
+        repeatDelay: 1.5
       },
-      0.3
+      1.5
     )
     .to(".six", 0.5, {
       opacity: 0,
@@ -287,7 +287,7 @@ const animationTimeline = () => {
       ".last-smile",
       0.5,
       {
-        rotation: 90
+        rotation: 270
       },
       "+=1"
     );
