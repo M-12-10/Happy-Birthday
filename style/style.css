@@ -298,13 +298,13 @@ html {
 
 @media screen and (max-height: 700px) {
   .six .hat {
-    left: 32%;
+    left: 34%;
   }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
-    left: 32%;
+    left: 34%;
   }
 }
 
@@ -351,21 +351,21 @@ html {
 @media screen and (min-width: 1024px) {
   /* For larger desktop screens */
   .six img {
-    max-width: 500px; /* Restrict size on larger screens */
+    max-width: 512px; /* Restrict size on larger screens */
   }
 }
 
 @media screen and (max-width: 720px) {
   /* For smaller mobile screens */
   .six img {
-    max-width: 300px; /* Smaller dp for mobile */
+    max-width: 360px; /* Smaller dp for mobile */
   }
 }
 
 @media screen and (max-width: 500px) {
   /* For very small screens */
   .six img {
-    max-width: 150px;
+    max-width: 250px;
   }
 }
 /* Media Queries for responsiveness */
