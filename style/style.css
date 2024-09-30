@@ -126,16 +126,17 @@ html {
   height: auto; /* Maintains aspect ratio */
   border-radius: 80%; /* Makes the dp circular */
   margin: 0 auto;
-  position: relative; /* Position relative to ensure hat stays on top */
+  position: relative; /* Ensure hat stays relative to the image */
 }
 
 .six .hat {
   position: absolute;
-  width: 100px;
-  top: -50px;
-  left: 41.5%;
+  width: 20%; /* Set relative width to the image size */
+  top: -10%; /* Adjust top position relative to the image */
+  left: 40%; /* Adjust left to ensure the hat is centered */
   z-index: 2; /* Ensure hat stays on top of the image */
 }
+
 
 .baloons img {
   display: inline-block;
@@ -156,6 +157,7 @@ html {
   left: 30%;
 }
 
+/* Preserve all nth-child SVG positions */
 .eight svg {
   width: 25px;
   position: absolute;
@@ -163,6 +165,60 @@ html {
   left: 0;
   visibility: hidden;
   z-index: -1;
+}
+
+.eight svg:nth-child(1) {
+  top: 7vh;
+  left: 5vw;
+  fill: #bd6ecf;
+}
+
+.eight svg:nth-child(2) {
+  top: 23vh;
+  left: 35vw;
+  fill: #7dd175;
+}
+
+.eight svg:nth-child(3) {
+  top: 33vh;
+  left: 23vw;
+  fill: #349d8b;
+}
+
+.eight svg:nth-child(4) {
+  top: 43vh;
+  left: 57vw;
+  fill: #347a9d;
+}
+
+.eight svg:nth-child(5) {
+  top: 68vh;
+  left: 7vw;
+  fill: #c66053;
+}
+
+.eight svg:nth-child(6) {
+  top: 42vh;
+  left: 77vw;
+  fill: #bfaa40;
+}
+
+.eight svg:nth-child(7) {
+  top: 68vh;
+  left: 83vw;
+  fill: #e3bae8;
+}
+
+.eight svg:nth-child(8) {
+  top: 86vh;
+  left: 37vw;
+  fill: #8762cb;
+}
+
+.eight svg:nth-child(9) {
+  top: 94vh;
+  left: 87vw;
+  fill: #9a90da;
 }
 
 .wish-hbd {
@@ -189,7 +245,6 @@ html {
 
 /* Consolidated Media Queries */
 @media screen and (max-width: 720px) {
-  /* Adjust layout for 720px width */
   .container {
     width: 85%;
   }
@@ -216,8 +271,9 @@ html {
   }
 
   .six .hat {
-    width: 55px;
-    top: -15px;
+    width: 30%; /* Adjust hat width for mid-size screens */
+    top: -8%; /* Adjust top positioning */
+    left: 35%; /* Adjust left to center the hat */
   }
 
   .wish-hbd {
@@ -238,7 +294,6 @@ html {
 }
 
 @media screen and (max-width: 500px) {
-  /* Adjustments for very small screens */
   .container {
     width: 90%;
   }
@@ -257,12 +312,13 @@ html {
   }
 
   .six img {
-    max-width: 150px;
+    max-width: 150px; /* Further adjustment for small screens */
   }
 
   .six .hat {
-    width: 50px;
-    top: -20px;
+    width: 35%; /* Adjust hat width for smaller screens */
+    top: -7%; /* Adjust top positioning */
+    left: 33%; /* Adjust left to center the hat */
   }
 
   .wish-hbd {
@@ -278,46 +334,51 @@ html {
   }
 
   .baloons img {
-    max-width: 80%; /* Smaller balloons on smaller screens */
+    max-width: 80%; /* Smaller balloons for smaller screens */
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /* For larger desktop screens */
   .six img {
     max-width: 500px; /* Larger dp */
   }
 
+  .six .hat {
+    width: 20%; /* Ensure hat scales with image size */
+    top: -10%; /* Adjust top positioning */
+    left: 40%; /* Center the hat on larger screens */
+  }
+
   .baloons img {
-    max-width: 100%; /* Larger balloons */
+    max-width: 100%; /* Larger balloons for bigger screens */
   }
 }
 
 @media screen and (max-height: 1000px) {
   .six .hat {
-    left: 40%;
+    left: 40%; /* Adjust for smaller screen heights */
   }
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
-    left: 37%;
+    left: 37%; /* Adjust for shorter screens */
   }
 }
 
 @media screen and (max-height: 700px) {
   .six .hat {
-    left: 32%;
+    left: 32%; /* Adjust for very short screens */
   }
 
-  /* Applies to very specific smaller screens */
   .container {
-    width: 100%;
+    width: 100%; /* Expand container width for very short screens */
   }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
-    left: 32%;
+    left: 32%; /* Further adjustment for compact screens */
   }
 }
+
