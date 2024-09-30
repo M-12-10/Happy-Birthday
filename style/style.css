@@ -370,22 +370,3 @@ html {
 }
 /* Media Queries for responsiveness */
 @media screen and (min-width: 1024px) {
-  /* For larger desktop screens */
-  .baloons img {
-    max-width: 100%; /* Larger balloons on bigger screens */
-  }
-}
-
-@media screen and (max-width: 720px) {
-  /* For medium-sized screens (e.g. tablets, small laptops) */
-  .baloons img {
-    max-width: 90%; /* Slightly smaller balloons for mid-sized screens */
-  }
-}
-
-@media screen and (max-width: 500px) {
-  /* For smaller mobile screens */
-  .baloons img {
-    max-width: 80%; /* Smaller balloons on smaller screens */
-  }
-}
