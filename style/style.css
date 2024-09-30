@@ -350,21 +350,21 @@ html {
 }
 @media screen and (min-width: 1024px) {
   /* For larger desktop screens */
-  .six .lydia {
+  .six img {
     max-width: 250px; /* Restrict size on larger screens */
   }
 }
 
 @media screen and (max-width: 720px) {
   /* For smaller mobile screens */
-  .six .lydia {
+  .six img {
     max-width: 150px; /* Smaller dp for mobile */
   }
 }
 
 @media screen and (max-width: 500px) {
   /* For very small screens */
-  .six .lydia {
+  .six img {
     max-width: 120px;
   }
 }
