@@ -161,7 +161,7 @@ const animationTimeline = () => {
         rotation: 360,
         x: 8
       },
-      "+=0.1"
+      "+=0.4"
     )
     .to(
       ".idea-5",
@@ -274,9 +274,9 @@ const animationTimeline = () => {
         opacity: 0,
         scale: 80,
         repeat: 3,
-        repeatDelay: 1
+        repeatDelay: 1.4
       },
-      1.5
+      0.3
     )
     .to(".six", 0.5, {
       opacity: 0,
