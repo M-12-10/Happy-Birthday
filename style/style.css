@@ -4,10 +4,10 @@ html {
 
 @keyframes scrollBackground {
             from {
-                transform: translateX(0);
+                background-position: 0 0;
             }
             to {
-                transform: translateX(-50%);
+                background-position: -100% 0;
             }
 }
 
