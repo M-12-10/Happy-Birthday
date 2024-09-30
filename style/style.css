@@ -372,20 +372,20 @@ html {
 @media screen and (min-width: 1024px) {
   /* For larger desktop screens */
   .baloons img {
-    max-width: 90%; /* Larger balloons on bigger screens */
+    max-width: 100%; /* Larger balloons on bigger screens */
   }
 }
 
 @media screen and (max-width: 720px) {
   /* For medium-sized screens (e.g. tablets, small laptops) */
   .baloons img {
-    max-width: 70%; /* Slightly smaller balloons for mid-sized screens */
+    max-width: 85%; /* Slightly smaller balloons for mid-sized screens */
   }
 }
 
 @media screen and (max-width: 500px) {
   /* For smaller mobile screens */
   .baloons img {
-    max-width: 50%; /* Smaller balloons on smaller screens */
+    max-width: 70%; /* Smaller balloons on smaller screens */
   }
 }
