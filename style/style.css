@@ -369,3 +369,81 @@ html {
   }
 }
 
+.gift-container {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  visibility: hidden; /* Initially hidden until triggered */
+}
+
+.gift-box {
+  cursor: pointer;
+  transform-origin: center bottom;
+  animation: shakeGift 0.5s infinite alternate;
+}
+
+/* Voucher Popup */
+.voucher {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #ffe066;
+  color: #000;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid #ff4081;
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: transform 0.6s ease, opacity 0.6s ease, visibility 0s linear 0.6s;
+}
+
+/* Animation for gift opening */
+@keyframes openGift {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(120deg);
+  }
+}
+
+/* Animation for voucher popup */
+@keyframes voucherPop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate the gift shaking */
+@keyframes shakeGift {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+/* When the gift opens */
+.gift-box.open {
+  animation: openGift 1s forwards;
+}
+
+/* When voucher appears */
+.gift-box.open + .voucher {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+  animation: voucherPop 0.6s forwards;
+}
