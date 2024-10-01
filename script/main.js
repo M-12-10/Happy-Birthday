@@ -276,15 +276,14 @@ const animationTimeline = () => {
         repeat: 3,
         repeatDelay: 1.5
       },
-      0.3
+      0.5
     )
     .to(".six", 0.5, {
       opacity: 0,
       y: 50,
       zIndex: "-1"
     })
-
-      // Gift box shaking animation before opening
+// Gift box shaking animation before opening
   .from(".gift-box", 1.5, {
     opacity: 0,
     y: -100,  // Gift comes down from above
@@ -297,7 +296,6 @@ const animationTimeline = () => {
     yoyo: true,
     repeat: 5
   })
-
   // Gift box opens
   .to(".gift-box", 1, {
     rotationX: 120, // Rotate the lid to simulate opening
@@ -312,7 +310,7 @@ const animationTimeline = () => {
   })
 
   // Add some delay before moving on
-  .to({}, 1, {})  // 1-second delay
+  .to({}, 1, {})  // 1-second de
     
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
