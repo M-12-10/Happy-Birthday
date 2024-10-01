@@ -268,7 +268,7 @@ const animationTimeline = () => {
     )
     .staggerTo(
       ".eight svg",
-      1.5,
+      2.5,
       {
         visibility: "visible",
         opacity: 0,
