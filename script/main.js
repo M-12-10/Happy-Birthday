@@ -24,6 +24,18 @@ const fetchData = () => {
     });
 };
 
+// Select the gift box and voucher
+const giftBox = document.querySelector('.gift-box');
+const voucher = document.querySelector('.voucher');
+
+// Add click event to the gift box
+giftBox.addEventListener('click', function() {
+  // Add the 'open' class to trigger the animations
+  giftBox.classList.add('open');
+  // Show voucher after a delay
+  voucher.classList.add('show');
+});
+
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
