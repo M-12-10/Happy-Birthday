@@ -108,21 +108,31 @@
       </svg>
       
     </div>
-    <!-- Gift Box Wrapper -->
-<div class="gift-wrapper">
-  <!-- Gift Box with Lid -->
-  <div class="gift-box" data-node-name="giftBox">
-    <!-- Lid of the gift box -->
-    <div class="gift-lid" data-node-name="giftLid"></div>
-    <!-- Body of the gift box -->
-    <div class="gift-body" data-node-name="giftBody"></div>
-  </div>
-  
-  <!-- Voucher Inside the Box -->
-  <div class="voucher" data-node-name="voucher">
-    <p data-node-name="voucherText">1000 Rupee Food Voucher</p>
-  </div>
+<div class="gift-container">
+    <!-- Gift Box SVG -->
+    <svg class="gift-box" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200">
+        <!-- Base Box -->
+        <rect width="60" height="40" x="20" y="50" fill="#FF4081" />
+        <rect width="60" height="10" x="20" y="40" fill="#FF4081" />
+        
+        <!-- Ribbon -->
+        <rect width="10" height="40" x="45" y="50" fill="#ffffff" />
+        <rect width="60" height="10" x="20" y="65" fill="#ffffff" />
+        
+        <!-- Gift Top (Lid) -->
+        <rect width="60" height="10" x="20" y="40" fill="#FF4081" />
+        
+        <!-- Bow -->
+        <circle cx="40" cy="35" r="8" fill="#ffffff" />
+        <circle cx="60" cy="35" r="8" fill="#ffffff" />
+    </svg>
+
+    <!-- Voucher Popup -->
+    <div class="voucher">
+        <p>₹1000 Food Voucher!</p>
+    </div>
 </div>
+    
     <div class="nine">
       <p data-node-name="outroText">Okey, ab wapis jao apne nerd ke paas apna food voucher claim karne >_></p>
       <p id="replay" data-node-name="replayText">Ya idher tap karo, if you wanna see this again hehe</p>
