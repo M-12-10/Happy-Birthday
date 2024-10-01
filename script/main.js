@@ -295,6 +295,37 @@ const animationTimeline = () => {
       y: 50,
       zIndex: "-1"
     })
+
+      // Gift box shaking animation before opening
+  .from(".gift-box", 1.5, {
+    opacity: 0,
+    y: -100,  // Gift comes down from above
+    ease: "bounce.out"
+  })
+  
+  // Slight shake to make the gift lively
+  .to(".gift-box", 0.5, {
+    x: 10,
+    yoyo: true,
+    repeat: 5
+  })
+
+  // Gift box opens
+  .to(".gift-box", 1, {
+    rotationX: 120, // Rotate the lid to simulate opening
+    ease: "power2.inOut"
+  })
+
+  // Reveal the voucher after the gift box opens
+  .to(".voucher", 1, {
+    opacity: 1,
+    y: -30,  // Voucher pops up
+    ease: "back.out(1.7)"
+  })
+
+  // Add some delay before moving on
+  .to({}, 1, {})  // 1-second delay
+    
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
       ".last-smile",
