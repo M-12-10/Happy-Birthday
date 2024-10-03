@@ -283,15 +283,10 @@ const animationTimeline = () => {
       y: 50,
       zIndex: "-1"
     })
-    .staggerFrom(".temp", 1, ideaTextTrans, 1.2)
-    .to(
-      ".temp box",
-      0.5,
-      {
-        rotation: 360
-      },
-      "+=1"
-    ) 
+    
+    .from(".temp", 0.7, ideaTextTrans)
+    .to(".temp", 0.7, ideaTextTransLeave, "+=2.5")
+    
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
       ".last-smile",
