@@ -283,7 +283,6 @@ const animationTimeline = () => {
       y: 50,
       zIndex: "-1"
     })
-    .staggerFrom(".box", 1, ideaTextTrans, 1.2)
     .to(".box", 1, { // Animate the gift box to appear before ".nine"
       opacity: 1, 
       scale: 1, // Assume the initial scale was set to something smaller (like scale: 0 in CSS)
