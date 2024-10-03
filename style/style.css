@@ -369,9 +369,12 @@ html {
   }
 }
 .box {
-  position: relative;
   width: 25vw;
   height: 25vw;
+  text-align: center;
+  visibility: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Remove the background circle */
