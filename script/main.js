@@ -285,7 +285,7 @@ const animationTimeline = () => {
     })
     .to(".box", 1, {
         opacity: 0,
-        y: -150
+        y: 30
     }, "+=3.5") // This plays slightly before the next animation 
     
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
@@ -297,7 +297,7 @@ const animationTimeline = () => {
       },
       "+=1"
     );
-
+ 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
