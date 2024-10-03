@@ -525,28 +525,11 @@ html {
 @keyframes img-appear {
   0% {
     opacity: 0;
-    transform: translateY(0%);
+    transform: translateY(110%);
   }
   100% {
     opacity: 1;
-    transform: translateY(100%);
-  }
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 720px) {
-  .box-body {
-    width: 35vw;
-    height: 35vw;
-    margin-top: 25vw;
-  }
-  .box-lid {
-    width: 40vw;
-    height: 5vw;
-  }
-  .box-bowtie::before, .box-bowtie::after {
-    width: 15vw;
-    height: 15vw;
+    transform: translateY(0%);
   }
 }
 
