@@ -274,22 +274,19 @@ const animationTimeline = () => {
         opacity: 0,
         scale: 80,
         repeat: 3,
-        repeatDelay: 1.6
+        repeatDelay: 1.4
       },
       0.3
     )
     .to(".six", 0.5, {
       opacity: 0,
-      y: 50,
+      y: 30,
       zIndex: "-1"
     })
-    .to(".box", 1, { // Animate the gift box to appear before ".nine"
-      opacity: 1, 
-      scale: 1, // Assume the initial scale was set to something smaller (like scale: 0 in CSS)
-      y: 0,    // Bring the gift box to its position
-      visibility: "visible",
-      ease: "bounce.out" // Adding a bounce effect for popping up
-    }, "-=0.5") // This plays slightly before the next animation 
+    .to(".box", 1, {
+        opacity: 0,
+        y: -150
+    }, "+=3.5") // This plays slightly before the next animation 
     
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
