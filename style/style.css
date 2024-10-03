@@ -370,7 +370,7 @@ html {
 }
 
 .box {
-  position: relative;
+  position: center;
 }
 .box::before {
   content: "";
