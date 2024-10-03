@@ -283,9 +283,9 @@ const animationTimeline = () => {
       y: 50,
       zIndex: "-1"
     })
-    .staggerFrom(".temp h3", 1, ideaTextTrans, 1.2)
+    .staggerFrom(".temp", 1, ideaTextTrans, 1.2)
     .to(
-      ".box",
+      ".temp box",
       0.5,
       {
         rotation: 360
