@@ -283,10 +283,8 @@ const animationTimeline = () => {
       y: 30,
       zIndex: "-1"
     })
-    .to(".box", 1, {
-        opacity: 0,
-        y: 30
-    }, "+=3.5") // This plays slightly before the next animation 
+    .from(".box", 0.7, ideaTextTrans)
+    .to(".box", 0.7, ideaTextTransLeave, "+=3.5")
     
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
