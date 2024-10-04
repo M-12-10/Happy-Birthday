@@ -283,18 +283,8 @@ const animationTimeline = () => {
       y: 30,
       zIndex: "-1"
     })
-    .from(".temp", 0.7, {
-      scale: 0.5,
-      opacity: 0,
-      y: 30,
-      rotation: -15
-    })
-    .to(".temp", 0.7, {
-      scale: 1,
-      opacity: 1,
-      y: 0,
-      rotation: 0
-    }, "+=2")
+    .from(".temp", 0.7, ideaTextTrans)
+    .to(".temp", 0.7, ideaTextTransLeave, "+=1.5")
     
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
